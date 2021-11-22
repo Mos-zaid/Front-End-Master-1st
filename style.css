@@ -17,11 +17,11 @@ body{
     background-color: var(--Pale-blue);
 }
 
-.wavy-background{
-    background: url("./images/pattern-background-desktop.svg") no-repeat top left;
-    background-size: contain;
+p{
+    font-size: 1rem;
 }
 
-img{
-    max-width: 100%;
+.wavy-background{
+    background: url("./images/pattern-background-desktop.svg");
+    background-size: contain;
 }
