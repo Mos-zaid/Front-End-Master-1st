@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 :root{
     --Pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(223, 47%, 23%);
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
     --desktop-width: 1440px;
+    --bright-blue: hsl(245, 75%, 52%);
 }
 
 *{
@@ -42,7 +42,7 @@ p{
     border: 1px solid var(--pale-blue);
     border-radius: 25px;
     width: 400px; 
-    height: 70vh; 
+    min-height: 70vh; 
     background-color: #fff;  
     }
 
@@ -63,34 +63,59 @@ p{
     text-align: center;
     width: 75%;
     margin: 0 auto;
-    color: var(--pale-blue);
+    color: var(--desaturated-blue);
+    font-weight: 500;
 }
 
 .order-summary__plan{
-    background-color: var(--pale-blue);
+    background-color: var(--very-pale-blue);
     width: 80%;
     margin: 20px auto;
+    padding: 18px 5px;
     text-align: center;
-    border-radius: 5px;
-    height: 70px;
+    border-radius: 10px;
+    min-height: 60px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    justify-items: center;
+}
+.order-summary__plan a{
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+.order-summary__middle-item{
+    justify-self: start;
 }
 
 h4.order-summary__plan-title{
     margin: 0;
     padding: 0;
     display: inline;
+    color: var(--pale-blue);
     font-weight: 900;
 }
-
-.order-summary__buttons{
-    width: 80%;
-    margin: 20px auto;
+.order-summary__plan-price{
+    color: var(--desaturated-blue);
+    font-weight: 500;
 }
 
-.order-summary__buttons a{
-    background-color: var(--dark-blue);
-    width: 100%;
-    color:var(--very-pale-blue);
+a.btn_blue{
+    display: block;
+    text-align: center;
+    padding: 15px 50px;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    margin: 15px 10%;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+a.btn_light{
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: none;
     font-weight: 700;
-    
+    color: var(--desaturated-blue);
 }
