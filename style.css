@@ -11,7 +11,6 @@
 *{
     box-sizing: border-box;
     overflow-x: hidden;
-
 }
 
 html{
@@ -36,32 +35,35 @@ p{
 .order-summary{
     display: grid;
     place-items: center;
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
 }
 .order-summary__card{
     border: 1px solid var(--pale-blue);
     border-radius: 25px;
-    width: 400px; 
-    min-height: 600px; 
+    width: 450px; 
+    min-height: 650px; 
     background-color: #fff;  
     }
 
 .order-summary__image img{
     padding: 0px;
     margin: 0px;
-    width: 400px;
+    width: 450px;
     border-radius: 25px 25px 0px 0px;    
 }
 
 .order-summary__title{
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
     font-weight: 900;
+    color: var(--dark-blue);
+    font-size: 1.6rem;
 }
 
 .order-summary__content{
     text-align: center;
+    font-size: 1.02rem;
     width: 75%;
     margin: 0 auto;
     color: var(--desaturated-blue);
@@ -83,6 +85,7 @@ p{
 }
 .order-summary__plan a{
     font-weight: 700;
+    font-size: 0.89rem;
     color: var(--bright-blue);
     transition: color 250ms;
 }
@@ -96,18 +99,25 @@ p{
     justify-self: start;
 }
 
-h4.order-summary__plan-title{
+h2.order-summary__plan-title{
     margin: 0;
     padding: 0;
     display: inline;
-    color: var(--pale-blue);
+    font-size: 1.05rem;
+    color: var(--dark-blue);
     font-weight: 900;
+    overflow-y: auto;
 }
 .order-summary__plan-price{
     color: var(--desaturated-blue);
     font-weight: 500;
 }
 
+.order-summary__buttons{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
 a.btn_blue{
     display: block;
     text-align: center;
@@ -119,6 +129,7 @@ a.btn_blue{
     text-decoration: none;
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     transition: background-color 250ms;
+    font-size: 1.02rem;
 }
 
 a.btn_blue:hover,
@@ -133,6 +144,7 @@ a.btn_light{
     text-decoration: none;
     font-weight: 700;
     color: var(--desaturated-blue);
+    font-size: 1.02rem;
 }
 
 a.btn_light:hover,
