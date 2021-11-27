@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge.
+Thanks for checking out this code.
 
 
 ## The challenge
@@ -22,6 +22,9 @@ This challenge was to build out this order summary card component and get it loo
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
-- Mobile-first workflow
 
+## My Proposed Improvements
+- Make it Mobile first
+- Use more REM than px
+- improve CSS architecture by dividing my code into typography, General styles, Layout, Buttons
 

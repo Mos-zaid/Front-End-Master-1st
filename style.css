@@ -14,8 +14,6 @@
 
 html{
     font-family: 'Red Hat Display', sans-serif;
-    padding: 0px;
-    margin: 0px;
 }
 
 body{
@@ -29,14 +27,15 @@ p{
 
 .wavy-background{
     background: url("./images/pattern-background-desktop.svg") top no-repeat;
-    padding: 0px;
     width: 100vw;
+    padding: 0px;
 }
 
 .order-summary{
     display: grid;
     place-items: center;
     padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 }
 .order-summary__card{
     border: 1px solid var(--pale-blue);
@@ -83,7 +82,14 @@ p{
 .order-summary__plan a{
     font-weight: 700;
     color: var(--bright-blue);
+    transition: color 250ms;
 }
+.order-summary__plan a:hover,
+.order-summary__plan a:focus{
+    color: #766CF1;
+    text-decoration: none;
+}
+
 .order-summary__middle-item{
     justify-self: start;
 }
@@ -109,6 +115,13 @@ a.btn_blue{
     margin: 30px 10%;
     border-radius: 15px;
     text-decoration: none;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    transition: background-color 250ms;
+}
+
+a.btn_blue:hover,
+a.btn_blue:focus {
+    background-color: #766CF1;
 }
 
 a.btn_light{
@@ -119,3 +132,25 @@ a.btn_light{
     font-weight: 700;
     color: var(--desaturated-blue);
 }
+
+a.btn_light:hover,
+a.btn_light:focus {
+    color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 440px) {
+    /* For mobile phones: */
+    .wavy-background{
+        background: url("./images/pattern-background-mobile.svg") top no-repeat;
+    }
+    .order-summary__card{
+        width: 350px; 
+        min-height: 600px; 
+        background-color: #fff;  
+    }
+    
+    .order-summary__image img{
+            width: 350px;
+    }
+        
+  }
